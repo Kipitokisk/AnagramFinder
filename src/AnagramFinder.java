@@ -22,7 +22,7 @@ public class AnagramFinder {
     }
 
     public static String getKey(String word) {
-        char[] arr = word.toCharArray();
+        char[] arr = word.toLowerCase().toCharArray();
         Arrays.sort(arr);
         return new String(arr);
     }
